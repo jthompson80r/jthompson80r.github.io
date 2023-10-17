@@ -22,6 +22,7 @@
           <h1>{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
           <h2>{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
         </header>
+	      <!--
         <section id="downloads" class="clearfix">
           {% if site.show_downloads %}
           <a href="{{ site.github.zip_url }}" id="download-zip" class="button"><span>Download .zip</span></a>
@@ -39,7 +40,7 @@
         <section id="main_content">
           {{ content }}
         </section>
-
+        -->
         <footer>
         {% if site.github.is_project_page %}
           {{ site.title | default: site.github.repository_name }} is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a><br>
@@ -49,6 +50,5 @@
 
       </div>
     </div>
-  -->
   </body>
 </html>
