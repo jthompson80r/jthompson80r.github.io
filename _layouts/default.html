@@ -24,6 +24,7 @@
           <h2>{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
 	  -->
 	  <img src={{ site.baseurl }}/assets/images/ThompsonWorks.jpg>
+	  <h2>{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
         </header>
 	<!--
         <section id="downloads" class="clearfix">
@@ -39,11 +40,17 @@
 	  {% endif %}
 	{% endif %}
         </section>
+	-->
         <hr>
         <section id="main_content">
-          {{ content }}
+          <!--{{ content }}-->
+	  Contact us.<br>
+          Questions? Email: tori@thompsonworksplumbing.com<br>
+          Need work? Call: (978) 836-5362<br>
+          <br>
+          Danvers, MA 01923
         </section>
-        -->
+        
         <footer>
         {% if site.github.is_project_page %}
           {{ site.title | default: site.github.repository_name }} is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a><br>
